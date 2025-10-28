@@ -5,14 +5,6 @@ gsap.from(".about", {
     ease: "power3.out"
 });
 
-gsap.from(".about h1", {
-    duration: 1,
-    opacity: 0,
-    y: 50,
-    delay: 0.4,
-    ease: "power2.out"
-});
-
 gsap.from("h1", {
     duration: 1,
     opacity: 0,
