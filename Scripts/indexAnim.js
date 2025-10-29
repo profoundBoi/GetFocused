@@ -28,3 +28,6 @@ gsap.from(".about #logo", {
     delay: 0.8,
     ease: "back.out(1.7)"
 });
+
+
+
