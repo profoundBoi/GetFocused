@@ -1,0 +1,97 @@
+.service-section {
+  padding: 6rem 4rem;
+  background-color: #111111;
+  color: #e0e0e0;
+  font-family: 'Tektur', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.service-section.alt {
+  background-color: #e0e0e0;
+  color: #111111;
+}
+
+.service-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  max-width: 1200px;
+  flex-wrap: wrap;
+}
+
+.service-text {
+  flex: 1 1 45%;
+}
+
+/* Headings */
+.service-text h2 {
+  color: #00ff88;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+}
+
+/* Default text (dark background) */
+.service-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #d0d0d0;
+  text-align: justify;
+}
+
+/* Light background version (alt) */
+.service-section.alt .service-text h2 {
+  color: #00884d;
+  text-shadow: 0 0 8px rgba(0, 255, 136, 0.3);
+}
+
+.service-section.alt .service-text p {
+  color: #222222;
+}
+
+/* Image placeholders */
+.service-images {
+  flex: 1 1 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-placeholder {
+  width: 100%;
+  height: 280px;
+  border: 2px dashed #00ff66;
+  border-radius: 12px;
+  color: #00ff66;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: italic;
+  background-color: rgba(0, 255, 102, 0.05);
+}
+
+/* Lighter border for alt backgrounds */
+.service-section.alt .image-placeholder {
+  border-color: #00884d;
+  color: #00884d;
+  background-color: rgba(0, 136, 77, 0.05);
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .service-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .service-images {
+    order: -1;
+    margin-bottom: 2rem;
+  }
+
+  .image-placeholder {
+    height: 200px;
+  }
+}
