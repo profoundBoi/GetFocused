@@ -37,7 +37,6 @@ nav label[for="logo"] {
   cursor: pointer;
 }
 
-/* Nav Links */
 nav ul {
   display: flex;
   list-style: none;
@@ -51,14 +50,12 @@ nav ul li a {
   transition: color 0.3s, text-shadow 0.3s;
 }
 
-/* Hover + Active */
 nav ul li a:hover,
 nav ul li a.active {
   color: #00ff66;
   text-shadow: 0 0 8px #00ff66;
 }
 
-/* Hamburger Menu */
 #check {
   display: none;
 }
@@ -70,7 +67,6 @@ nav ul li a.active {
   cursor: pointer;
 }
 
-/* Responsive Design */
 @media (max-width: 850px) {
   nav {
     flex-wrap: wrap;
@@ -79,7 +75,6 @@ nav ul li a.active {
     transition: all 0.3s ease;
   }
 
-  /* Stack logo + burger + links */
   .bar-button {
     display: block;
   }
@@ -98,12 +93,10 @@ nav ul li a.active {
     margin: 15px 15px;
   }
 
-  /* When checkbox is checked — menu slides down */
   #check:checked ~ ul {
-    max-height: 600px; /* adjust depending on how many links you have */
+    max-height: 600px; 
   }
 
-  /* Make sure content below pushes down */
   main {
     transition: margin-top 0.4s ease;
     padding-top: 1px; 
@@ -111,6 +104,6 @@ nav ul li a.active {
   }
 
   #check:checked ~ main {
-    margin-top: 250px; /* adjust slightly below menu height */
+    margin-top: 250px;
   }
 }
