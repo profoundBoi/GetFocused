@@ -1,16 +1,47 @@
-gsap.registerPlugin(ScrollTrigger);
+document.addEventListener("DOMContentLoaded", () => {
+  gsap.registerPlugin(ScrollTrigger);
 
-// animate each event-card as user scrolls
-gsap.from(".event-card", {
-  scrollTrigger: {
-    trigger: ".focus-areas",
-    start: "top 30%",  // when top of focus-areas hits 80% of viewport
-    toggleActions: "play none none none"
-  },
-  opacity: 0,
-  y: 50,          // start 50px below
-  scale: 0.8,     // slightly smaller
-  duration: 4.8,
-  stagger: 0.2,   // animate each card one after another
-  ease: "power2.out"
+  const sections = document.querySelectorAll(".service-section");
+
+  sections.forEach((section, i) => {
+    const content = section.querySelector(".service-content");
+
+    // Start hidden and rotated like a film roll
+    gsap.set(section, {
+      opacity: 0,
+      rotateX: i % 2 === 0 ? -45 : 45,
+      transformOrigin: "center top",
+      clipPath: "inset(50% 0 50% 0)",
+    });
+
+    // Animate the section roll
+    gsap.to(section, {
+      scrollTrigger: {
+        trigger: section,
+        start: "top 85%",
+        end: "bottom 60%",
+        scrub: true,
+      },
+      opacity: 1,
+      rotateX: 0,
+      clipPath: "inset(0% 0 0% 0)",
+      ease: "power3.out",
+      duration: 1.5,
+    });
+
+    // Animate inner content for depth
+    gsap.from(content, {
+      scrollTrigger: {
+        trigger: section,
+        start: "top 90%",
+        toggleActions: "play none none reverse",
+      },
+      y: 80,
+      opacity: 0,
+      rotateZ: i % 2 === 0 ? -2 : 2,
+      duration: 1.2,
+      ease: "expo.out",
+      delay: 0.2,
+    });
+  });
 });
