@@ -1,7 +1,7 @@
 gsap.from(".about", {
     duration: 1.5,
-    y: -100,          // slide up from below
-    opacity: 0,      // start transparent
+    y: -100,          
+    opacity: 0,      
     ease: "power3.out"
 });
 
