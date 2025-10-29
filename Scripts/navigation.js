@@ -1,16 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
   const header = document.querySelector("header");
 
-  // Detect if running on GitHub Pages or locally
   const isGitHub = window.location.hostname.includes("github.io");
 
-  // Set the base path depending on environment and folder depth
   let basePath = "";
   if (isGitHub) {
-    // Use your repository name when hosted on GitHub Pages
+   
     basePath = "/GetFocused/";
   } else {
-    // Count folder depth to build correct relative paths locally
+
     const depth = window.location.pathname.split("/").length - 2;
     basePath = "../".repeat(depth);
   }
