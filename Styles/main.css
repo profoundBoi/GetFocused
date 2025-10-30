@@ -11,16 +11,17 @@ body {
   min-height: 100vh;
 }
 
-.page-transition {
+.page-shutter {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #171717; /* matches your site */
+  top: 50%;
+  left: 50%;
+  width: 300vw;   /* bigger to fully cover the screen on all devices */
+  height: 300vh;
+  background: #171717;
+  border-radius: 50%;   /* perfect circle */
+  transform: translate(-50%, -50%) scale(0);  /* start “open” */
   z-index: 9999;
   pointer-events: none;
-  transform: translateY(-100%);
 }
 
 nav {
