@@ -32,3 +32,35 @@ document.addEventListener("DOMContentLoaded", () => {
     </nav>
   `;
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const navLinks = document.querySelectorAll("nav ul li a");
+  const menuCheckbox = document.getElementById("check");
+  const navUl = document.querySelector("nav ul");
+  const logo = document.getElementById("logo");
+
+  gsap.from(logo, { y: -50, opacity: 0, duration: 1, ease: "bounce.out" });
+
+  if (window.innerWidth <= 768) {
+    navUl.style.transform = "translateX(-100%)";
+  }
+
+  menuCheckbox.addEventListener("change", () => {
+    if (window.innerWidth <= 768) {
+      if (menuCheckbox.checked) {
+        gsap.to(navUl, { x: 0, duration: 0.5, ease: "power3.out" });
+        gsap.from(navLinks, { y: -20, opacity: 0, duration: 0.5, stagger: 0.1 });
+      } else {
+        gsap.to(navUl, { x: "-100%", duration: 0.5, ease: "power3.in" });
+      }
+    }
+  });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 768) {
+      navUl.style.transform = "none"; 
+    } else if (!menuCheckbox.checked) {
+      navUl.style.transform = "translateX(-100%)"; 
+    }
+  });
+});
