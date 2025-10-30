@@ -17,8 +17,8 @@ document.addEventListener("DOMContentLoaded", () => {
     <nav>
       <input type="checkbox" id="check">
       <label for="check" class="bar-button"><i class="fa-solid fa-bars"></i></label>
-      <label for="logo">Get Focused</label>
-      <img src="${basePath}Images/WebLogo.png" id="logo" alt="Get Focused Logo"/>
+      
+      <img src="${basePath}Img/GFLogo-c.png" id="logo" alt="Get Focused Logo"/>
 
       <ul>
         <li><a href="${basePath}index.html" class="${window.location.pathname.endsWith('index.html') ? 'active' : ''}">Home</a></li>

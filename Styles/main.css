@@ -52,7 +52,7 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a.active {
-  color: #00ff66;
+  color: #a1ff00;
   text-shadow: 0 0 8px #00ff66;
 }
 
