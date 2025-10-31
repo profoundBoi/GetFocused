@@ -29,16 +29,14 @@ h1 {
 
 .about p {
   line-height: 1.8;
-  font-size: 1.1rem;
+  font-size: 18px;
   color: #000000;
   max-width: 800px;
   text-align: left;
-  background-color: #c5c5c5;
   padding: 5px;
   border-radius: 10px;
-  margin: 1.5rem;
-  padding-left: 20px;
-  padding-right: 20px;
+  margin: 0rem;
+
 }
 
 .about #logo {
@@ -53,7 +51,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: stretch;
-  gap: 150px;
+  gap: 100px;
   padding: 200px 50px; 
   flex-wrap: nowrap;      
   overflow-x: auto;        
@@ -69,12 +67,11 @@ h1 {
   background: #171717;
   border-radius: 12px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-  width: 280px;      
+  width: 250px;      
   text-align: center;
   padding: 40px 55px;
   transition: all 0.3s ease;
   flex-shrink: 0;
-  
 }
 
 .event-card:hover {
@@ -119,20 +116,16 @@ h1 {
   box-shadow: 0 0 10px #00ff66;
 }
 
-@media (max-width: 868px) {
+@media (max-width: 870px) {
     .about {
         flex-direction: column;
         text-align: center;
         padding: 3rem 2rem;
     }
 
-    .about p {
-
-  border-radius: 5px;
-  text-align: center;
-
-
-}
+    .about p{
+      size: 16px;
+    }
 
     .about #logo {
         margin: 5rem 2rem 2rem 2rem;    

@@ -128,19 +128,22 @@ footer {
   text-shadow: 0 0 8px #00ff66;
 }
 
-@media (max-width: 1500px) {
-  body {
-    background-attachment: scroll; /* Fix performance & scaling issues on mobile */
-    background-position: center top; 
+@media (max-width: 1030px) {
+  body{
+    background-image: none;
   }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 870px) {
   nav {
     flex-wrap: wrap;
     height: auto;
     padding: 15px 30px;
     transition: all 0.3s ease;
+  }
+
+  body{
+    background-image: none;
   }
 
   .bar-button {
@@ -184,10 +187,4 @@ footer {
     gap: 20px;
   }
 
-  @media (max-width: 600px) {
-  body {
-    background-size: contain;  
-    background-position: top center;
-  }
-}
 }
