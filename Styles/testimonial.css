@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-color: #171717;
+  
   font-family: 'Tektur', sans-serif;
   color: #e0e0e0;
   display: flex;
@@ -45,9 +45,9 @@ h1 {
 .testimonial-card {
   min-width: 600px;
   max-width: 600px;
-  border: 6px solid #f0f0f0;
+  border: 6px solid #080808;
   border-radius: 16px;
-  background-color:  #f0f0f0;
+  background-color:  #171717;
   padding: 2px;
   flex-shrink: 0;
   transition: transform 0.5s ease, opacity 0.5s ease;
