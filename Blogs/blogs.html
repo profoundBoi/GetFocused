@@ -6,6 +6,7 @@
     <title>Blogs</title>
     <link rel="icon" href="../Img/GFL.png" type="image/x-icon">
     <link rel="stylesheet" href="../Styles/main.css">
+    <link rel="stylesheet" href="../Styles/blog.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 
@@ -18,6 +19,83 @@
 
     </header>
 
+<main>
+  <h1>Our Packages</h1>
+
+  <input type="text" id="package-search" placeholder="Search packages..." />
+
+  <div class="packages-grid">
+
+    <div class="package-card" data-name="Studio Photography" data-content="Our professional studio is available at R1,500 per hour, providing a comfortable and fully equipped environment for your shoot.
+     Air conditioning included
+     Perfect for portraits, product photography, and creative sessions">
+      <img src="../Img/packages/studio.png" alt="Studio Photography">
+      <h2>Studio Photography</h2>
+      <button class="read-more-btn">Read More</button>
+    </div>
+
+    <div class="package-card" data-name="Photobooth Hire" data-content="Add fun and instant memories to your event with our premium photobooth services.
+     Setup Fee: R2,500
+     Standard Prints (15 x 10 cm): R1,050 per hour with Unlimited prints (minimum 2 hours)
+     Large Prints (20 x 15 cm): R1,500 per hour with Unlimited prints (minimum 2 hours)
+     All photobooth packages include on-site attendants, props, and instant high-quality prints.">
+      <img src="../Img/fullBooth.jpg" alt="Photobooth Hire">
+      <h2>Photobooth Hire</h2>
+      <button class="read-more-btn">Read More</button>
+    </div>
+
+    <div class="package-card" data-name="360 Video Booth" data-content="Create unforgettable interactive moments with our immersive 360° video booth.
+     Setup Fee: R1,500
+     Operation: R995 per hour and includes operator (minimum 2 hours)
+     Your guests can record dynamic, share-ready clips perfect for social media engagement.">
+      <img src="../Img/360Booth.jpg" alt="360 Video Booth">
+      <h2>360 Video Booth</h2>
+      <button class="read-more-btn">Read More</button>
+    </div>
+
+    <div class="package-card" data-name="Bronze Wedding Package" data-content="Bronze Package for R5,000 (excl. VAT)
+     4 hours of photography coverage
+     Professionally edited digital images of the top selection">
+      <img src="../Img/packages/wedding1.png" alt="Bronze Wedding">
+      <h2>Bronze Wedding Package</h2>
+      <button class="read-more-btn">Read More</button>
+    </div>
+
+    <div class="package-card" data-name="Silver Wedding Package" data-content="Silver Package for R7,000
+     6 hours of photography coverage
+     Edited digital image collection">
+      <img src="../Img/packages/wedding2.png" alt="Silver Wedding">
+      <h2>Silver Wedding Package</h2>
+      <button class="read-more-btn">Read More</button>
+    </div>
+
+    <div class="package-card" data-name="Gold Wedding Package" data-content="Gold Package for R15,000
+     8 hours of full photo and video coverage
+     Edited highlights of key moments">
+      <img src="../Img/packages/wedding3.png" alt="Gold Wedding">
+      <h2>Gold Wedding Package</h2>
+      <button class="read-more-btn">Read More</button>
+    </div>
+
+    <div class="package-card" data-name="Diamond Wedding Package" data-content="Diamond Package for R25,000
+     10 hours of complete coverage: photography, videography, and drone footage
+     15-minute professionally edited feature film
+     2-minute social media highlight video">
+      <img src="../Img/packages/wedding4.png" alt="Diamond Wedding">
+      <h2>Diamond Wedding Package</h2>
+      <button class="read-more-btn">Read More</button>
+    </div>
+
+    <div class="package-card" data-name="Platinum Wedding Package" data-content="Platinum Package for R35,000
+     Includes all Diamond features plus:
+     3-hour Photobooth session at the reception with unlimited prints
+     2-hour 360° Booth session during family photos and canapés, including instant video sharing">
+      <img src="../Img/packages/wedding5.png" alt="Platinum Wedding">
+      <h2>Platinum Wedding Package</h2>
+      <button class="read-more-btn">Read More</button>
+    </div>
+  </div>
+</main>
     <footer>
 
   <div class="footer-container">
@@ -35,5 +113,6 @@
   
 </footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="../Scripts/packageFilter.js"></script>
 </body>
 </html>
