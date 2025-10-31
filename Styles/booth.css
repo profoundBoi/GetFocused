@@ -16,7 +16,7 @@
         }
 
         section.booth:nth-child(odd) {
-            background-color:#171717;
+            background-color:#000000;
             color: #e0e0e0;
         }
 
