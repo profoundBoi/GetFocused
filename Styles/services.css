@@ -39,6 +39,7 @@ body {
   display: flex;
   align-items: center;
   gap: 0.8rem;
+  color: #00ff88
 }
 
 .service-text p {
