@@ -27,17 +27,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
     emailjs.sendForm("service_9oju2ur", "template_6fldwc6", form)
       .then(() => {
-        console.log("✅ Business email sent successfully.");
+        console.log("Business email sent successfully.");
 
         if (email) {
-          console.log("Sending auto-reply to client...");
+          console.log("Sending auto-reply to client.");
           return emailjs.sendForm("service_9oju2ur", "template_2zulxp7", form);
         } else {
           return Promise.resolve();
         }
       })
       .then(() => {
-        console.log("✅ Auto-reply sent (if applicable).");
+        console.log("Auto-reply sent.");
         statusMsg.textContent = "Message sent successfully!";
         statusMsg.style.color = "#00ff99";
         form.reset();
