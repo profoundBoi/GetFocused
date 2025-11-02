@@ -1,11 +1,7 @@
-body{
-  background-image: none;
-}
-main {
-  display: flex;
-  flex-direction: column;
-  gap: 0; 
+body {
+  margin: 0;
   padding: 0;
+  background-image: none;
 }
 
 .service-section {
@@ -13,20 +9,15 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #bfbfbf;
-  margin: 0;
-  border: none;
+  background-color:  #e1e1e1;
+  padding: 5rem 2rem;
+  margin: 0; 
+  color: #171717;
 }
 
 .service-section.alt {
-  background: #000000;
-  padding: 5rem 2rem;
-  margin: 0;
-  border-radius: 0;
-}
-
-.service-section + .service-section {
-  border-top: 5px solid green;
+  background-color: #171717;
+  color: #ffffff;
 }
 
 .service-content {
@@ -36,63 +27,52 @@ main {
   gap: 3rem;
   max-width: 1200px;
   width: 100%;
-  flex-wrap: wrap;
 }
 
 .service-text {
-  flex: 1 1 400px;
+  flex: 1;
 }
 
 .service-text h2 {
   font-size: 2rem;
-  color: #00ff99;
-  margin-bottom: 1.2rem;
-  text-shadow: 0 0 10px rgba(0, 255, 153, 0.4);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
 }
 
 .service-text p {
-  color: #d3d3d3;
-  line-height: 1.7;
-  font-size: 1.05rem;
-  letter-spacing: 0.5px;
-}
-
-.service-text i {
-  color: #00ff99;
-  margin-right: 10px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: inherit;
 }
 
 .service-images {
-  flex: 1 1 400px;
+  flex: 1;
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  flex-wrap: wrap;
 }
 
 .service-images img {
   width: 100%;
-  max-width: 300px;
-  border-radius: 16px;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
   object-fit: cover;
-  transition: all 0.4s ease;
-  box-shadow: 0 0 20px rgba(0, 255, 153, 0.15);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
-.service-images img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 25px rgba(0, 255, 153, 0.4);
+.service-section.alt .service-images img {
+  box-shadow: 0 4px 20px rgba(255,255,255,0.1);
 }
 
-.image-placeholder1,
-.image-placeholder2 {
-  width: 100%;
-  max-width: 300px;
-  height: 400px;
-  border-radius: 16px;
-  background: linear-gradient(135deg, #0a0a0a 0%, #00ff99 150%);
-  opacity: 0.1;
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding-top: 70px; 
 }
 
 @media (max-width: 900px) {
@@ -101,7 +81,23 @@ main {
     text-align: center;
   }
 
+  .service-images {
+    order: -1;
+  }
+
   .service-images img {
     max-width: 90%;
+  }
+
+  .service-text h2 {
+    font-size: 1.6rem;
+  }
+
+  .service-text p {
+    font-size: 0.95rem;
+  }
+
+  main {
+    padding-top: 80px;
   }
 }
