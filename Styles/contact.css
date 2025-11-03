@@ -1,3 +1,4 @@
+
 .contact-section {
   display: flex;
   justify-content: center;
@@ -6,6 +7,7 @@
   color: #e0e0e0;
   padding: 4rem 2rem;
   margin-top: 3rem;
+  background-color: #171717;
 }
 
 .contact-container {
