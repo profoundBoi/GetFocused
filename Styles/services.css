@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background-image: none;
+  color: #171717; /* default text color for light background */
 }
 
 .service-section {
@@ -9,15 +10,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color:  #e1e1e1;
+  background-color: #e1e1e1; /* light bg */
   padding: 5rem 2rem;
   margin: 0; 
-  color: #171717;
+  color: #171717; /* default text for light bg */
 }
 
 .service-section.alt {
-  background-color: #171717;
-  color: #ffffff;
+  background-color: #171717; /* dark bg */
+  color: #ffffff; /* default text for dark bg */
 }
 
 .service-content {
@@ -39,13 +40,20 @@ body {
   display: flex;
   align-items: center;
   gap: 0.8rem;
-  color: #00ff88
+  /* Different color from p, depending on bg */
+
+  color: #00884d;
+  text-shadow: 0 0 8px rgba(0, 255, 136, 0.3);
+}
+
+.service-section.alt .service-text h2 {
+    color: #00ff88; /* bright green for light bg */
 }
 
 .service-text p {
   font-size: 1rem;
   line-height: 1.6;
-  color: inherit;
+  color: inherit; /* inherit from section (dark or light) */
 }
 
 .service-images {
@@ -67,15 +75,11 @@ body {
   box-shadow: 0 4px 20px rgba(255,255,255,0.1);
 }
 
-body {
-  margin: 0;
-  padding: 0;
-}
-
 main {
   padding-top: 70px; 
 }
 
+/* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
   .service-content {
     flex-direction: column;
