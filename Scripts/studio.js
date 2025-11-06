@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+window.onload = () => {
   const lightbox = document.getElementById('lightbox');
   const lightboxImg = document.getElementById('lightbox-img');
   const closeBtn = document.querySelector('.close');
@@ -17,8 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   galleryImages.forEach((img, index) => {
     img.addEventListener('click', () => {
-      lightbox.style.display = 'flex';
       showImage(index);
+      lightbox.style.display = 'flex'; 
     });
   });
 
@@ -26,19 +26,12 @@ document.addEventListener('DOMContentLoaded', () => {
     lightbox.style.display = 'none';
   });
 
-  prevBtn.addEventListener('click', (e) => {
-    e.stopPropagation();
-    showImage(currentIndex - 1);
-  });
-
-  nextBtn.addEventListener('click', (e) => {
-    e.stopPropagation();
-    showImage(currentIndex + 1);
-  });
-
   lightbox.addEventListener('click', (e) => {
     if (e.target === lightbox) lightbox.style.display = 'none';
   });
+
+  prevBtn.addEventListener('click', (e) => { e.stopPropagation(); showImage(currentIndex - 1); });
+  nextBtn.addEventListener('click', (e) => { e.stopPropagation(); showImage(currentIndex + 1); });
 
   document.addEventListener('keydown', (e) => {
     if (lightbox.style.display === 'flex') {
@@ -47,4 +40,4 @@ document.addEventListener('DOMContentLoaded', () => {
       if (e.key === 'Escape') lightbox.style.display = 'none';
     }
   });
-});
+};

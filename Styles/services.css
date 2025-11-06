@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background-image: none;
-  color: #171717; /* default text color for light background */
+  color: #171717;
 }
 
 .service-section {
@@ -10,15 +10,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #e1e1e1; /* light bg */
+  background-color: #e1e1e1;
   padding: 5rem 2rem;
   margin: 0; 
-  color: #171717; /* default text for light bg */
+  color: #171717;
 }
 
 .service-section.alt {
-  background-color: #171717; /* dark bg */
-  color: #ffffff; /* default text for dark bg */
+  background-color: #171717; 
+  color: #ffffff; 
 }
 
 .service-content {
@@ -40,20 +40,18 @@ body {
   display: flex;
   align-items: center;
   gap: 0.8rem;
-  /* Different color from p, depending on bg */
-
   color: #00884d;
   text-shadow: 0 0 8px rgba(0, 255, 136, 0.3);
 }
 
 .service-section.alt .service-text h2 {
-    color: #00ff88; /* bright green for light bg */
+    color: #00ff88; 
 }
 
 .service-text p {
   font-size: 1rem;
   line-height: 1.6;
-  color: inherit; /* inherit from section (dark or light) */
+  color: inherit;
 }
 
 .service-images {
@@ -79,7 +77,6 @@ main {
   padding-top: 70px; 
 }
 
-/* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
   .service-content {
     flex-direction: column;

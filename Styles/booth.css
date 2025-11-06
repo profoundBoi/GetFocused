@@ -28,24 +28,27 @@
 
         .booth-text {
             flex: 1 1 45%;
+            
         }
 
         .booth-text h2 {
-            color: #ffffff;
+            color: #00ff88;
+
             font-size: 2rem;
             margin-bottom: 1rem;
-            text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+         
         }
 
         .booth-text p {
             line-height: 1.8;
             font-size: 1.1rem;
             text-align: justify;
+            
         }
 
         section:nth-child(even) .booth-text h2 {
-            color: #ffffff;
-            text-shadow: 0 0 8px rgba(0, 255, 136, 0.3);
+          text-shadow: 0 0 8px rgba(0, 255, 136, 0.3);
+          color: #00884d;
         }
 
         section:nth-child(even) .booth-text p {
