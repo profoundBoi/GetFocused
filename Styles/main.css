@@ -21,6 +21,7 @@ body {
   position: fixed;
   top: 50%;
   left: 50%;
+  inset: 0;
   width: 300vw;   
   height: 300vh;
   background: #000000;
@@ -28,6 +29,7 @@ body {
   transform: translate(-50%, -50%) scale(0); 
   z-index: 9999;
   pointer-events: none;
+  z-index: 999;
 }
 
 nav {
