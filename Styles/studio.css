@@ -3,6 +3,7 @@
   padding: 4rem 2rem;
   background-color: #e1e1e1;
   color: #171717;
+   z-index: 1;
 }
 
 .studio-hire h1 {
@@ -89,7 +90,7 @@
 #lightbox {
   display: none;
   position: fixed;
-  z-index: 1000;
+  z-index: 1;
   left: 0;
   top: 0;
   width: 100%;

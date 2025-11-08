@@ -45,10 +45,17 @@ nav {
   left: 0;
   z-index: 1000;
   border-bottom: 5px solid #00884d;
+  z-index: 999;
+}
+
+header{
+  z-index: 9999;
+  position: sticky;
 }
 
 nav img {
   height: 50px;
+  z-index: 997;
 }
 
 nav label[for="logo"] {
