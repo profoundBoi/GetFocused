@@ -10,23 +10,6 @@ window.addEventListener("load", () => {
     .from(".studio-hire p", { opacity: 0, y: 20, stagger: 0.2 })
     .from(".price", { opacity: 0, scale: 0.8 });
 
-  gsap.to(".motion-camera", {
-    duration: 5,
-    repeat: -1,
-    ease: "none",
-    motionPath: {
-      path: [
-        { x: 100, y: 0 },
-        { x: 300, y: -100 },
-        { x: 600, y: 0 },
-        { x: 300, y: 100 },
-        { x: 100, y: 0 }
-      ],
-      curviness: 1.5,
-      autoRotate: true
-    }
-  });
-
   gsap.utils.toArray(".studio-gallery img, .archive-gallery img").forEach((img, i) => {
     gsap.from(img, {
       scrollTrigger: {
