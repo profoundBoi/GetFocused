@@ -139,7 +139,6 @@ footer {
   text-shadow: 0 0 8px #00ff66;
 }
 
-/* Book Now button placed above the footer */
 .book-now-container {
   display: flex;
   justify-content: center;

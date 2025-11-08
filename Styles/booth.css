@@ -10,7 +10,6 @@ main {
     padding-top: 70px;
 }
 
-/* --- Booth Sections --- */
 section.booth {
     display: flex;
     justify-content: space-between;
@@ -34,7 +33,6 @@ section.booth.video {
     color: #171717;
 }
 
-/* --- Booth Text --- */
 .booth-text {
     flex: 1;
 }
@@ -66,7 +64,6 @@ section.booth.half .booth-text h2 {
     color: inherit;
 }
 
-/* --- Booth Images --- */
 .booth-image {
     flex: 1;
     display: flex;
@@ -81,10 +78,9 @@ section.booth.half .booth-text h2 {
     border-radius: 12px;
     object-fit: cover;
     box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
-position: relative;
-  transform-style: preserve-3d;
-  backface-visibility: hidden;
-    /* REQUIRED for GSAP MotionPath & 3D rotations */
+    position: relative;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
     position: relative;
     transform-style: preserve-3d;
     backface-visibility: hidden;
@@ -92,7 +88,6 @@ position: relative;
     will-change: transform, opacity;
 }
 
-/* --- Alternate Booths --- */
 section.booth:nth-child(even) {
     background-color: #171717;
     color: #ffffff;
@@ -102,7 +97,6 @@ section.booth:nth-child(even) .booth-text h2 {
     color: #00ff88;
 }
 
-/* --- Inspiration Search --- */
 .inspiration-search {
     padding: 50px 20px;
     background-color: #171717;
@@ -123,7 +117,6 @@ section.booth:nth-child(even) .booth-text h2 {
     color: #cfcfcf; 
 }
 
-/* --- Search Input --- */
 .search-container input {
     width: 100%;
     max-width: 400px;
@@ -147,7 +140,6 @@ section.booth:nth-child(even) .booth-text h2 {
     box-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
 }
 
-/* --- Inspiration Results Grid --- */
 .results-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -182,7 +174,6 @@ section.booth:nth-child(even) .booth-text h2 {
     color: #cfcfcf;
 }
 
-/* --- Responsive --- */
 @media (max-width: 900px) {
     section.booth {
         flex-direction: column;
