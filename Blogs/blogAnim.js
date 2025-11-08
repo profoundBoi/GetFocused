@@ -1,18 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
   gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
 
-  // Master timeline for entrance
   const tl = gsap.timeline({
     defaults: { ease: "power3.out", duration: 1.2 }
   });
 
-  // Animate page heading and search bar first
   tl.from("h1", { y: -80, opacity: 0 })
     .from("#package-search", { scale: 0.8, opacity: 0, duration: 0.8 }, "-=0.6");
 
-  // Animate packages in sequence with a wave motion
   gsap.utils.toArray(".package-card").forEach((card, i) => {
-    const pathAmplitude = 80; // how far the motion path sways horizontally
+    const pathAmplitude = 80; 
 
     gsap.from(card, {
       scrollTrigger: {
@@ -34,7 +31,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Footer fade-in animation
   gsap.from("footer", {
     scrollTrigger: {
       trigger: "footer",
